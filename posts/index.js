@@ -10,9 +10,9 @@ app.use(cors());
 const posts = {};
 
 // get endpoint
-// app.get("/posts", (req, res) => {
-// 	res.send(posts);
-// });
+app.get("/posts", (req, res) => {
+	res.send(posts);
+});
 
 // post endpoint
 app.post("/posts", async (req, res) => {
